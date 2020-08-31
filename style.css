@@ -1,0 +1,13 @@
+.logo__title {
+  font-family: PT serif;
+}
+.menu {
+  font-family: roboto;
+}
+.main__title {
+  font-family: PT serif;
+}
+.main__description,
+.main__btn {
+  font-family: roboto;
+}
