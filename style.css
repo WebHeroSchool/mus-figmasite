@@ -1,3 +1,21 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80vw;
+}
+
+.header, .section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 40px;
+}
+
 .logo__title {
   font-family: PT, serif;
 }
@@ -6,8 +24,34 @@
   font-family: roboto, sans-serif;
 }
 
+.menu__item {
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.section {
+  padding: 173px 0 181px 0;
+}
+
+.main {
+  width: 30vw;
+  padding-top: 76px;
+}
+
+.main-image {
+  width: 40vw;
+  height: 657px; /* это для наглядности, потом добавим картинку такой же высоты, этот параметр будет не нужен */
+}
+
 .main__title {
   font-family: PT, serif;
+}
+
+.main__description {
+  margin: 40px 0;
 }
 
 .main__description,
