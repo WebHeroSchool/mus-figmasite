@@ -7,7 +7,8 @@ body {
   width: 80vw;
 }
 
-.header, .section {
+.header,
+.section {
   display: flex;
   justify-content: space-between;
 }
@@ -16,16 +17,54 @@ body {
   padding-top: 40px;
 }
 
-.logo__title {
-  font-family: PT, serif;
+.logo {
+  display: flex;
+  justify-content: space-between;
 }
 
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background: #0056ec;
+  opacity: 0.7;
+}
+
+.logo__circle::before {
+  content:'';
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #c8dbfb;
+  opacity: 0.7
+}
+
+.logo__title {
+  font-family: 'PT Serif', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 16px;
+} /* здесь и далее у меня сознательно альтернативные шрифты не совпадают с уроком, т.к. в уроке почему-то предложено шрифт с засечками PT Serif заменять на Arial, шрифт без засечек */
+
 .menu {
-  font-family: roboto, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .menu__item {
   padding: 0 13px;
+  text-decoration: none;
 }
 
 .menu__item:last-child {
@@ -43,11 +82,15 @@ body {
 
 .main-image {
   width: 40vw;
-  height: 657px; /* это для наглядности, потом добавим картинку такой же высоты, этот параметр будет не нужен */
+  
 }
 
 .main__title {
-  font-family: PT, serif;
+  font-family: 'PT Serif', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 87px;
 }
 
 .main__description {
@@ -56,5 +99,19 @@ body {
 
 .main__description,
 .main__btn {
-  font-family: roboto, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.main__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.main__btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
 }
