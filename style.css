@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 .wrapper {
@@ -87,19 +86,17 @@ body {
 
 .menu__item_active:after {
   display: block;
-  content:'';
+  content: '';
   background-color: #0056ec;
   height: 3px;
   width: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;          
 }
 
 .menu__item:hover {
-color: #afcaf9;
-position: relative;
-text-shadow: #333 1px 1px;
+  color: #afcaf9;
+  position: relative;
+  text-shadow: #333 1px 1px;
 }
 
 .menu__item:hover:after {
@@ -111,7 +108,7 @@ text-shadow: #333 1px 1px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  }
+}
 
 .section {
   padding: 173px 0 181px 0;
