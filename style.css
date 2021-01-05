@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -112,15 +116,13 @@ body {
 
 .section {
   padding: 173px 0 181px 0;
+  background: url('./img/Frame.svg') no-repeat right center;
+  background-size: 40vw;
 }
 
 .main {
   width: 30vw;
   padding-top: 76px;
-}
-
-.main-image {
-  width: 40vw;
 }
 
 .main__title {
@@ -131,13 +133,17 @@ body {
   line-height: 87px;
 }
 
+.main__title_highlight {
+  background-color: #ecf3ffec;
+}
+
 .main__description,
 .main__btn {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .main__description {
-  margin: 40px 0;
+  margin: 40px 0 61px 0;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -149,4 +155,17 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  color: #fff;
+  background: #0056ec;
+  border-radius: 4px;
+  padding: 21px 18px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.main__btn:hover {
+  background: #afcaf9;  
+  color: #0056ec;
+  box-shadow: #333 2px 2px 2px; 
+  
 }
