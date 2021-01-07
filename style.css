@@ -305,7 +305,7 @@ body {
   .header {
     padding-top: 2.6vh;
   }
-  
+
   .menu {
     padding-top: 1.2vh;
   }
@@ -316,7 +316,7 @@ body {
   }
 
   .menu__item:first-child {
-    margin-right: 20px
+    margin-right: 20px;
   }
   
   .section {
