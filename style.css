@@ -212,7 +212,7 @@ body {
   }
 
   .menu__item:first-child {
-    margin-right: 20px
+    margin-right: 20px;
   }
 
   .menu__item:last-child {
@@ -258,7 +258,7 @@ body {
   .menu {
     padding-top: 1.3vh;
   }
-  
+
   .menu__item {
     margin-right: 23px;
   }
@@ -266,7 +266,7 @@ body {
   .menu__item:first-child {
     margin-right: 22px;
   }
-  
+
   .section {
     padding: 5.7vh 0 25.1vh 0;
     background-position: right top 16vh;
@@ -374,10 +374,6 @@ body {
     display: none;
   }
 
-  .menu__item:first-child {
-    margin-right: 22px
-  }
-  
   .section {
     padding: 36.9vh 1.1vw 2vh 4.9vw;
     background-position: center top 5.1vh;
@@ -393,7 +389,7 @@ body {
     margin-bottom: 5vh;
     font-size: 30px;
     line-height: 40px;
-    text-align: center; 
+    text-align: center;
   }
 
   .main__description {
@@ -437,7 +433,6 @@ body {
   }
 
   .menu {
-    padding-top: 1.3vh;
     display: none;
     position: absolute;
     top: 0;
@@ -456,6 +451,10 @@ body {
     z-index: 2;
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .menu__item:first-child {
+    margin-right: 22px;
   }
 
   .menu__item_active:after {
