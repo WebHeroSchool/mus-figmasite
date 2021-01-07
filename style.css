@@ -66,7 +66,7 @@ body {
   line-height: 21px;
 }
 
-.menu__burger{
+.menu__burger {
   display: none;
 }
 
@@ -206,7 +206,7 @@ body {
     font-size: 14px;
     line-height: 16px;
   }
-  
+
   .menu__item {
     margin-right: 24px;
   }
@@ -214,7 +214,7 @@ body {
   .menu__item:first-child {
     margin-right: 20px
   }
-  
+
   .menu__item:last-child {
     margin-right: 0;
   }
@@ -264,7 +264,7 @@ body {
   }
 
   .menu__item:first-child {
-    margin-right: 22px
+    margin-right: 22px;
   }
   
   .section {
@@ -336,7 +336,7 @@ body {
     margin-bottom: 5vh;
     font-size: 30px;
     line-height: 38px;
-    text-align: center; 
+    text-align: center;
   }
 
   .main__description {
@@ -357,11 +357,9 @@ body {
     text-align: center;
     font-weight: 500;
     font-size: 14px;
-    padding: 2vh 2.6vw 0 0 ;
+    padding: 2vh 2.6vw 0 0;
   }
-
 }
-
 
 @media (max-width: 530px) {
   .wrapper {
@@ -374,10 +372,6 @@ body {
 
   .logo__title {
     display: none;
-  }
-  
-  .menu {
-    padding-top: 1.3vh;
   }
 
   .menu__item:first-child {
@@ -421,7 +415,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    padding: 2.1vh 2.6vw 0 0 ;
+    padding: 2.1vh 2.6vw 0 0;
   }
 
   #menu__toggle ~ .menu__burger {
@@ -443,6 +437,7 @@ body {
   }
 
   .menu {
+    padding-top: 1.3vh;
     display: none;
     position: absolute;
     top: 0;
@@ -455,6 +450,14 @@ body {
     background-color: #fff;
   }
 
+  .menu__item {
+    display: none;
+    margin: auto;
+    z-index: 2;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
   .menu__item_active:after {
     width: 0;
     margin: auto;
@@ -462,14 +465,6 @@ body {
     transform: translateX(-50%);
   }
 
-  .menu__item {
-    display: none;
-    margin: auto;
-    z-index: 2;
-    font-size: 30px;
-    line-height: 35px    
-  }
-    
   #menu__toggle:checked ~ .menu__burger {
     display: none;
   }
@@ -484,8 +479,9 @@ body {
       transform: rotate(0);
       opacity: 0;
     }
+
     to {
-      transform: rotatex(180deg);
+      transform: rotateX(180deg);
       opacity: 1;
     }
   }
@@ -503,6 +499,6 @@ body {
   }
 
   #menu__toggle:checked ~ .menu .menu__item:last-child {
-     margin: auto;
+    margin: auto;
   }
 }
